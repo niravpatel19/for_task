@@ -1,0 +1,364 @@
+body{
+    width: 1440px;
+    height:998px;
+    background: url(bgimg2.png),url(bgimg.png),url();
+    background-color: rgba(43, 74, 141, 0.47) ;
+ 
+}
+.img{
+    width: 206.11px;
+    height: 66.59px;
+    background: url(logo2.png);
+    position: absolute;
+    left:50px ;
+    top: px;
+  
+}
+.nav{
+    position: absolute;
+    width: 1239.5px;
+    height: 66.59px;
+    left: 100px;
+    top: 32px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    
+
+}
+.orange{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    height: 50px;
+    width: 130px;
+   
+   /* identical to box height, or 125% */
+   
+    text-align: center;
+    font-feature-settings: 'liga' off;
+   
+   /* Default / White */
+   
+    color: #FFFFFF;
+    background-color :#EF6518;
+    border: 2px solid #EF6518;
+    border-radius: 8px;
+    font-size: 16px;
+       
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 14px;
+   }
+   .text-blue{
+    color:#62B9E9;
+    }
+
+
+.car1{
+  
+    position: absolute;
+    width: 1084px;
+    height: 240px;
+    left: 190px;
+    top: 180px;
+    font-family: 'Manrope', sans-serif;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px; 
+    line-height: 80px;
+/* or 100% */
+
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    color: #FFFFFF;
+
+}
+.box2{
+    position: absolute;
+
+    left:82px;
+    top: 290px;
+
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+/* or 167% */
+
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    color: #F4F4F4;
+}
+
+.btn1{
+    width: 190px;
+    height: 60px ;
+    position: relative;
+    left: 140px ;
+    top: 115px;
+    
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    
+    font-feature-settings: 'liga' off;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    
+    border:  #EF6518;
+    background: #EF6518;
+    border-radius: 5px;
+}
+.btn1 :hover{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.btn2{
+    width: 191px;
+    height: 60px;
+    position: absolute;
+    left: 390px ;
+    top: 148px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: white;
+    color: #EF6518;
+    border-radius: 5px;
+    border: white;
+
+
+}
+.btn2 :hover{
+    text-decoration: none;
+    color: #EF6518;
+    
+}
+.text-dange{
+    color: #EF6518;
+}
+.p {
+    word-spacing: 5px;
+}
+
+
+.postion{
+    position: absolute;
+    top: 300px;
+    left: 210px;
+   
+}
+
+.border-circle
+{
+    width:50px ;
+    height:50px ;
+    border-radius: 50px ;
+    background-color: white;
+    color: #62B9E9;
+    border: white;
+    position: absolute;
+    top: 773px;
+    left: 725px;
+    font-size: 25px;
+}
+
+.home{
+    position: absolute;
+    left: 416px;
+    
+}
+.home :hover{
+    text-decoration: none;
+    color:#62B9E9;
+}
+.services{
+    position: absolute;
+    left:517.5px;
+   
+    
+}
+.our{
+    position: absolute;
+    left: 659px;
+      
+}
+.hire{
+     position: absolute;
+     left: 786.5px;
+}
+.contact{
+    position: absolute;
+    left: 960px;
+    
+    
+}
+.get{
+    position: absolute;
+    right: -320px;
+    top: px;
+    
+}
+
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) {
+    .car1{
+    position: absolute;
+    width: 345px;
+    height: 257px;
+    left: 32px;
+    top: 205px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 51.3885px;
+    line-height: 51px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+
+    }
+    .r2{
+    position: absolute;
+    width: 345px;
+    height: 97px;
+    left: 32px;
+    top: 492.12px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.2707px;
+    line-height: 32px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #F4F4F4;
+
+    }
+  
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    car1{
+    position: absolute;
+    width: 345px;
+    height: 257px;
+    left: 32px;
+    top: 205px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 51.3885px;
+    line-height: 51px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+
+    }
+    box2{
+    position: absolute;
+    width: 345px;
+    height: 97px;
+    left: 32px;
+    top: 492.12px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.2707px;
+    line-height: 32px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #F4F4F4;
+
+    }
+   
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .car1{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .box2{
+        display: inline;
+        width: auto;
+        height: auto;
+
+    }
+  }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .car1{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .box2{
+        display:inline-block;
+        width: auto;
+        height: auto;
+
+    }
+  
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

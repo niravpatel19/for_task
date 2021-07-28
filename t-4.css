@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+    padding: auto;
+}
+.new {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.new>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    height: 20px;
+    background: rgb(8, 8, 8);
+}
+
+
+
+
+.main {
+    font-size: 25px;
+    text-align: left;
+    background: rgb(236, 239, 240);
+}
+
+.aside-1 {
+   
+    background: rgb(236, 235, 230);
+}
+
+
+
+@media all and (min-width: 500px) {
+    .aside {
+        flex: 1 2 0;
+        height: 650px; ;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .main {
+        flex:  4 0;
+    }
+
+    .aside-1 {
+      
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+   
+  
+}
+
+ul.topnav {
+    font-size: 15px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(8, 8, 8);
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: rgb(248, 244, 244);}
+  
+  ul.topnav li a.active {background-color: #030303;}
+  
+  ul.topnav li.right {float: right;
+
+  }
+   
+  ul.sidenav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align:start;
+ 
+  }
+  
+  
+  ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 10px 0px;
+    text-decoration: none;
+  }
+  
+ 
+   ul.sidenav li a.active {
+    background-color: #165ee4;
+    color: rgb(247, 242, 242);
+   }
+  
+  ul.sidenav li a:hover:not(.active) {
+    background-color: #165ee4;
+    color: white;
+
+  }
+  .ac{
+      color:black;
+      font-size: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  
+  .dot {
+
+    height: 100px;
+    width: 100px;
+    background-color: rgb(134, 125, 125);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+ 
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;
+    margin: 50px;   
+}
+
+.container{
+  position: relative;
+  width: 700px;
+  display: flex;
+  justify-content:space-evenly;
+
+}

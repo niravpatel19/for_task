@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form Details</title>
+    <style>
+        body
+        {
+            display:flex;
+        }
+        #Fset
+        {
+            display:grid;
+            margin:10px;
+            padding:10px;
+            grid-area: Fset;
+            border:2px solid red;
+        }
+        #table
+        {
+            display:none; 
+            
+        }
+        th,td
+        {
+            border:2px solid red;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function check(form)
+        {
+            var name = form.Name.value;
+            var no = form.Pno.value;
+            var Uname = form.username.value;
+            var Upass = form.password.value;
+            var Co_Pass = form.Conf_Pass.value;
+            var Gender = form.gender.value;
+            var Ucity = form.city.value;
+
+            var dbemail = "Jay123@gmail.com";
+            var dbpass = "123987";
+
+            if(Uname==dbemail && Upass==dbpass)
+            {
+                document.getElementById("msg").innerHTML = " <b  style='color:green'> You Are Logedin SucessFully </b>";
+                document.getElementById("table").style.display = "flex";
+                document.getElementById("table").style.margin = "10px 10px ";
+
+
+
+                document.getElementById("name").innerHTML = name;
+                document.getElementById("Pno").innerHTML = no;
+                document.getElementById("Una").innerHTML = Uname;
+                document.getElementById("Upa").innerHTML = Upass;
+                document.getElementById("Gen").innerHTML = Gender;
+                document.getElementById("City1").innerHTML = Ucity;
+            }
+            else
+            {
+                document.getElementById("msg1").innerHTML = "<b style='color:red;'> Here The Password and Confirm_Password Must Be Same</b>";
+            }
+        }
+    </script>
+    <fieldset id="Fset">
+        <legend>Task-3.Print User Data In Table</legend>
+        <form action="">
+        
+                <input type="text" name="Name" placeholder=" Enter your Name"><br><br>
+                <input type="text" name="Pno" placeholder="Enter Your Phoe Number"><br><br>
+                <input type="email" name="username" placeholder="Enter Your Username"><br><br>
+                <input type="password" name="password" placeholder="Enter Your Password"><br><br>
+                <input type="password" name="Conf_Pass" placeholder="Enter Your Confirm Password"><br><br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female"><br><br>
+                <label for="city" name="City">Select City</label><br><br>
+                <select name="city" id="city">
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Ahmedabad">Surat</option>
+                    <option value="Ahmedabad">Rajsthan</option>
+                </select><br><br>
+                                
+            <input type="submit" value="Login" onclick="check(this.form); return false;">
+        </form>
+    </fieldset>
+
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Phon_No</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Gender</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="Pno"></td>
+            <td id="Una"></td>
+            <td id="Upa"></td>
+            <td id="Gen"></td>
+            <td id="City1"></td>
+
+        </tr>
+    </table>
+
+    <p id="msg"></p>
+    <p id="msg1"></p>
+
+</body>
+</html>

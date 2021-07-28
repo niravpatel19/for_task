@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: "Head Head Head Head"
+                "Nav Nav Nav Nav"
+                "Main Main Main Main"
+                "Main1 Main1 Main1 Main1";
+                
+        }
+
+        #Head {
+            display: flex;
+            grid-area: Head;
+            height: 200px;
+            background-color: rgb(243, 236, 197);
+        }
+
+        #Head img {
+            width: 200px;
+            height: 100%;
+        }
+
+        h1 {
+            display: block;
+            margin: 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 5px;
+            display: block;
+            font-size: 25px;
+            font-weight: 5;
+        }
+
+        #Nav {
+            background-color: rgb(167, 233, 233);
+            grid-area: Nav;
+        }
+
+        #Nav ul {
+            display: flex;
+        }
+
+        #Nav ul li {
+            list-style: none;
+            padding-right: 20px;
+            display: block;
+        }
+
+        #Nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            display: block;
+        }
+
+        #Nav ul li.active a {
+            color: red;
+        }
+
+        #SectionName {
+            display: flex;
+            grid-area: Main;
+
+        }
+
+        #SectionName small {
+            padding: 2px 2px;
+            margin: 5px 5px;
+            letter-spacing: 1px;
+        }
+
+        #SectionName h1 {
+            display: flex;
+            margin: 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: center;
+
+        }
+
+        #SectionName1,
+        #SectionName2 {
+            display: flex;
+            grid-area: Main;
+
+        }
+
+        #SectionName1 #Vd,
+        #SectionName2 #Vd1 {
+            display: flex;
+            margin: 2px;
+            padding: 20px 10px;
+            justify-content: center;
+
+        }
+
+        #SectionName1 #Vd video,
+        #SectionName2 #Vd1 video {
+            border: 2px solid red;
+            margin: 5px 5px;
+        }
+
+        #SectionName3 {
+            display: flex;
+            grid-area: Main1;
+        }
+
+        #SectionName3 #Im {
+            border: 2px solid red;
+            margin: 5px 5px;
+        }
+
+        #SectionName3 button{
+            border: none;
+            margin: 5px 5px;
+            background-color: white;
+        }
+
+        #SectionName3 #Vd2{
+            display: flex;
+            justify-content: center;
+        }
+
+        #SectionName4 {
+            display: flex;
+            grid-area: Main;
+            border: 2px solid red;
+
+        }
+
+        #SectionName4 small {
+            display: flex;
+            margin: 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: center;
+
+        }
+
+        #SectionName4 h1 {
+            display: flex;
+            margin: 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <SCRIPT>
+        function ShowAndHide() {
+            var x = document.getElementById('SectionName');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function ShowAndHide1() {
+            var x = document.getElementById('SectionName1');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function ShowAndHide2() {
+            var x = document.getElementById('SectionName2');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function ShowAndHide3() {
+            var x = document.getElementById('SectionName3');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function ShowAndHide4() {
+            var x = document.getElementById('SectionName4');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </SCRIPT>
+
+
+    <header id="Head">
+        <div>
+            <img src="Images/2021-05-30.png" alt="Jay Swaminarayan">
+        </div>
+        <div id="He">
+            <h1>Jay Swaminarayan</h1>
+            <h2>Here We Are Show You All Swaminarayan videos And Swaminarayan Songs.Also You can download That Songs And
+                Videos.</h2>
+        </div>
+    </header>
+
+    <nav id="Nav">
+        <ul>
+            <li class="active"><a href="#">Jay Swaminarayan</a></li>
+            <li><a href="#SectionName" onclick="ShowAndHide()">Home</a></li>
+            <li><a href="#Katha" onclick="ShowAndHide1()">status</a></li>
+            <li><a href="#Life" onclick="ShowAndHide2()">Life Character</a></li>
+            <li><a href="#Life" onclick="ShowAndHide3()">Songs</a></li>
+            <li><a href="#Conta" onclick="ShowAndHide4()">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main ID="SectionName" STYLE="display:none">
+        <div>
+            <h1>About</h1>
+            <small>
+                સ્વામિનારાયણ અથવા સહજાનંદ સ્વામી (૩ એપ્રિલ ૧૭૮૧ - ૧ જૂન ૧૮૩૦) સ્વામિનારાયણ સંપ્રદાયના સ્થાપક હતા. આ
+                પંથમાં સ્વામિનારાયણને નર-નારાયણના અવતાર ગણવામાં આવે છે. તેમનું મૂળ નામ ઘનશ્યામ પાન્ડે હતું અને તેમનો
+                જન્મ ઉત્તર પ્રદેશના છપૈયા ગામે ૧૭૮૧માં થયો હતો. ૧૭૯૨માં તેમણે ભારતભ્રમણ શરુ કર્યું અને રામાનંદ સ્વામીને
+                ગુરુ બનાવ્યા. રામાનંદ સ્વામીએ ઉદ્ધવ સંપ્રદાયની ગાદી તેમને સોંપી. તેમણે અનુયાયીઓને સ્વામિનારાયણ મંત્ર
+                આપ્યો અને સ્વામિનારાયણ તરીકે પ્રસિદ્ધ થયા. તેમના અનુયાયીઓ તેમને ભગવાનના અવતાર માનવા લાગ્યા અને આમ ઉદ્ધવ
+                સંપ્રદાયમાંથી સ્વામિનારાયણ સંપ્રદાય બન્યો. સ્વામિનારાયણના બીજા હરિકૃષ્ણ, ઘનશ્યામ, સહજાનંદસ્વામી,
+                નિલકંઠવર્ણી, સરજુદાસ, હરિ, કૃષ્ણ, ન્યાલકરણ વગેરે નામો પણ છે.સ્વામિનારાયણે તેમના જીવનકાળમાં છ મુખ્ય
+                મંદિરો પોતાના હસ્તે બનાવ્યા તથા ૫૦૦ પરમહંસો બનાવ્યા હતા. ૧૮૨૬માં તેમણે શિક્ષાપત્રી લખી અને ૧ જુન ૧૮૩૦ના
+                દિવસે ગઢડા ખાતે તેમણે દેહત્યાગ કર્યો. મૃત્યુ પહેલા તેમણે તેમના ભત્રીજાને આચાર્યપદે સ્થાપી સંપ્રદાયનો
+                કારભાર સોંપ્યો.
+            </small>
+        </div>
+    </main>
+
+    <main ID="SectionName1" STYLE="display:none">
+        <div id="Vd">
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.30 AM.mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.30 AM (1).mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.29 AM.mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.29 AM (2).mp4">
+            </video>
+
+        </div>
+    </main>
+
+    <main ID="SectionName2" STYLE="display:none">
+        <div id="Vd1">
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.26 AM (1).mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.28 AM.mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.27 AM.mp4">
+            </video>
+            <video width="320" height="240" controls>
+                <source src="Images/WhatsApp Video 2021-05-30 at 11.26.25 AM.mp4">
+            </video>
+
+        </div>
+    </main>
+
+    <main ID="SectionName3" STYLE="display:none">
+        <div id="Vd2">
+            <div>
+                <img src="Images/2021-05-30.png" width="108px" height="100px" id="Im">
+                <audio id="player" src="Images/Aarti-Fusion.mp3"></audio>
+                <div>
+                    <button onclick="document.getElementById('player').play()"><img src="Images/play-button.png"></button>
+                    <button onclick="document.getElementById('player').pause()"><img src="Images/pause.png"></button>
+                    <button onclick="document.getElementById('player').download()"><img src="Images/download-circular-button.png"></button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Images/2021-05-30.png" width="108px" height="100px" id="Im">
+                <audio id="player" src="Images/Aarti-Fusion.mp3"></audio>
+                <div>
+                    <button onclick="document.getElementById('player').play()"><img src="Images/play-button.png"></button>
+                    <button onclick="document.getElementById('player').pause()"><img src="Images/pause.png"></button>
+                    <button onclick="document.getElementById('player').download()"><img src="Images/download-circular-button.png"></button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Images/2021-05-30.png" width="108px" height="100px" id="Im">
+                <audio id="player" src="Images/Aarti-Fusion.mp3"></audio>
+                <div>
+                    <button onclick="document.getElementById('player').play()"><img src="Images/play-button.png"></button>
+                    <button onclick="document.getElementById('player').pause()"><img src="Images/pause.png"></button>
+                    <button onclick="document.getElementById('player').download()"><img src="Images/download-circular-button.png"></button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Images/2021-05-30.png" width="108px" height="100px" id="Im">
+                <audio id="player" src="Images/Aarti-Fusion.mp3"></audio>
+                <div>
+                    <button onclick="document.getElementById('player').play()"><img src="Images/play-button.png"></button>
+                    <button onclick="document.getElementById('player').pause()"><img src="Images/pause.png"></button>
+                    <button onclick="document.getElementById('player').download()"><img src="Images/download-circular-button.png"></button>
+                </div>
+            </div>
+
+        
+        </div>
+    </main>
+
+    <main ID="SectionName4" STYLE="display:none">
+        <div>
+            <h1>Contact</h1>
+            <small>
+                Contact Us - Major Centers <br>
+                International Headquarters-India- Ahmedabad <br>
+                BAPS Shri Swaminarayan Mandir <br>
+                Tel: +91-79-2562-5151 <br>
+                Fax: +91-79-2562-4405 <br>
+                E-mail: info@swaminarayan.org <br>
+                North American Headquarters- Piscataway <br>
+                BAPS Shri Swaminarayan Mandir <br>
+                Tel: (732) 777 1414 <br>
+                Fax: (732) 777 1616 <br>
+
+            </small>
+        </div>
+    </main>
+</body>
+
+</html>

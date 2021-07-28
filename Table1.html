@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table For Marksheet</title>
+    <style>
+        body
+        {
+            display:flex;
+        }
+        #Fset
+        {
+            display:grid;
+            margin:10px;
+            padding:10px;
+            grid-area: Fset;
+            border:2px solid;
+        }
+        #table
+        {
+            display:none; 
+            
+        }
+        th,td
+        {
+            border:2px solid;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function check(form)
+        {
+            var name = form.Name.value;
+            var Eno = form.Eno.value;
+            var Branch = form.Branch.value;
+            var Sem = form.Sem.value;
+            var Su1 = form.Sub1.value;
+            var Mar1 = form.Mark1.value;
+            var Su2 = form.Sub2.value;
+            var Mar2 = form.Mark2.value;
+            var Su3 = form.Sub3.value;
+            var Mar3 = form.Mark3.value;
+            var Uname = form.username.value;
+            var Upass = form.password.value;
+
+
+            var dbemail = "Jay123@gmail.com";
+            var dbpass = "123987";
+
+            if(Uname==dbemail && Upass==dbpass)
+            {
+                document.getElementById("table").style.display = "flex";
+                document.getElementById("table").style.margin = "10px 10px ";
+
+                document.getElementById("name1").innerHTML = name;
+                document.getElementById("Eno1").innerHTML = Eno;
+                document.getElementById("Branch1").innerHTML = Branch;
+                document.getElementById("Sem1").innerHTML = Sem;
+                document.getElementById("Sub11").innerHTML = Su1;
+                document.getElementById("Mark11").innerHTML = Mar1;
+                document.getElementById("Sub21").innerHTML = Su2;
+                document.getElementById("Mark21").innerHTML = Mar2;
+                document.getElementById("Sub31").innerHTML = Su3;
+                document.getElementById("Mark31").innerHTML = Mar3;
+                
+            }
+            else
+            {
+                document.getElementById("msg1").innerHTML = "<b style='color:red;'> Here The Password and Confirm_Password Must Be Same</b>";
+            }
+
+            if(Mar1<=30||Mar2<=30||Mar3<=30)
+            {
+                
+                document.getElementById("msg").innerHTML = "<b style='color:red;'> Sorry You Are Not Pass Your Exam</b>";
+            }
+            else
+            {
+                document.getElementById("msg").innerHTML = "<b style='color:green;'> Congretulation You Are Pass Your Exam</b>";
+            }
+        }
+    </script>
+    
+    <fieldset id="Fset">
+        <legend>Task-6.Print User Data In Table</legend>
+        <form action="">
+            
+            <input type="text" name="Name" placeholder=" Enter Student Name"><br><br>
+            <input type="text" name="Eno" placeholder="Enter Student Er Number"><br><br>
+            <input type="text" name="Branch" placeholder="Enter Student Branch Name"><br><br>
+            <input type="text" name="Sem" placeholder="Enter Student Semester"><br><br>
+            <input type="text" name="Sub1" placeholder="Enter Student Subject1 Name"><br><br>
+            <input type="text" name="Mark1" placeholder="Enter Student Subject1 Marks"><br><br>
+            <input type="text" name="Sub2" placeholder="Enter Student Subject2 Name"><br><br>
+            <input type="text" name="Mark2" placeholder="Enter Student Subject2 Marks"><br><br>
+            <input type="text" name="Sub3" placeholder="Enter Student Subject3 Name"><br><br>
+            <input type="text" name="Mark3" placeholder="Enter Student Subject3 Marks"><br><br>
+            <input type="email" name="username" placeholder="Enter Your Username"><br><br>
+            <input type="password" name="password" placeholder="Enter Your Password"><br><br>
+
+              
+            <input type="submit" value="Submit" onclick="check(this.form); return false;">
+        </form>
+    </fieldset>
+    
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th >Er No</th>
+             <th >Branch</th>
+            <th>Sem</th>
+            <th id="Sub11"></th>
+            <th id="Sub21"></th>
+            <th id="Sub31"></th>
+            
+        </tr>
+        <tr>
+            <td id="name1"></td>
+            <td id="Eno1"></td>
+            <td id="Branch1"></td>
+            <th id="Sem1"></th>
+             <td id="Mark11"></td>
+            <td id="Mark21"></td>
+            <td id="Mark31"></td>
+            
+       
+
+         </tr>
+    </table>
+    <p id="msg"></p>
+    <p id="msg1"></p>
+</body>
+</html>

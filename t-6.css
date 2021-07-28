@@ -1,0 +1,166 @@
+body {margin: 0;}
+.flex-container {
+    display: flex;
+    background-color: rgb(7, 7, 7);
+    justify-content: space-between;
+    height: 40px;
+  
+  }
+  
+  .flex-container > div {
+    
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color:white;
+
+  }
+  .flex-container1 {
+    display: flex;
+ 
+    background-color: rgb(252, 253, 253);
+    
+  }
+  
+  .flex-container1 > div {
+    background-color: #ffffff;
+    width: 20%;
+    margin: 0px;
+   
+   height: 680px;
+    font-size: 30px;
+
+  }
+  ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   width: 18%;
+    background-color: #f1f1f1;
+    position: fixed;
+   font-size: 15px;
+    overflow: auto;
+    text-align:unset;
+ height: 800px;
+  }
+  
+  
+  ul.sidenav li a {
+    display: block;
+    color: rgb(55, 116, 230);
+    padding: 10px 0px;
+    text-decoration: none;
+  }
+  
+ 
+   ul.sidenav li a.active {
+    background-color: #5186d6;
+    color: rgb(252, 248, 248);
+   }
+  
+  ul.sidenav li a:hover:not(.active) {
+    background-color: #5186d6;
+    color: white;
+
+  }
+
+  ul.topnav {
+    font-size: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+    
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: rgb(172, 161, 161);
+    text-align: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #070707;
+    font-size: 20px;
+    
+  }
+  
+  ul.topnav li.right {float: right;
+    align-content: center;
+  
+  }
+
+
+.dot {
+
+  height: 130px;
+  width: 130px;
+  background-color: rgb(104, 101, 101);
+  border-radius: 50%;
+  display: inline-block;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;
+  margin: 50px;   
+}
+
+.main {
+
+  font-size: 25px;
+  text-align: left;
+  
+}
+@media all and (min-width: 900px) {
+  .main {
+      flex:  4 0;
+  }
+
+  .aside-1 {
+    
+      order: 1;
+  }
+
+  .main {
+    font-style:normal;
+    color: rgb(15, 15, 15);
+    order: 2;
+  }
+
+.position{
+  position: absolute;
+  top: 100px;
+}
+.container{
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+  font-style: normal;
+
+}
+.size{
+  font-size: 20px;
+  color: #070707;
+}
+.size1{
+font-size: 12px;
+color: #312f2f;
+}

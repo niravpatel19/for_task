@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="me">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white" href="#"> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAScAAACrCAMAAAATgapkAAAAxlBMVEX///8AAAD0fSDPz89cXF09PT3y8vLe3t4ZGRm5urp3d3f0exsPDw9eXl70dgBTU1P0eA3m5ub4q3z1gzbzcgP5+fnY2Nj0eRT//Pl9fX0UFBSrq6v0eAD+9e4pKSn+8ujGxsb5uZChoaFpaWmXl5exsbGPj4/97N/84tH6y634s4ZycnLs7OwyMjIuLi5ERET6xKH71Lv3pW/83Mb6wp32lVD1jUL3n2T1hS31jDv3qHf2k00eHh5MTEz5uIz3o2b0fy32mFv2/9puAAAPKUlEQVR4nO1dbUPivBIFVHA3WqqCra4I6LoUxFVQsYiuD///T10KzdvMlJa+gIV7Pmlb0vQ0M3MySZNCITHsjtP99/U6Grvu+HV6+vTcsZMXumWwm4PhyLUMkzFWmoExyzRLo+GguemafSc0n96YYS0YUsEsw31/3nTtvgnswWvNsCBFkqqa+/R/+ys0/52ZgST5VBnuU2PT9dwsmj3XRNZGMTXaZetr9IwoLM2Zqg131aPbL8yMRtIcltXddI03gudR1LbEm9RVb/e8lN0zVmPJgzHZNdt7NlcxOQHrytl0zdcJu22t3pjmYGyHnJQ9NeKx5BFlPm26+uuC4y61OTZH8Plae9MPsB4MSsEkMNNg49FkMhmXrgKjoflv04+wDjxdBT2/ZZZG7Wen2Zih2XluT1gAVWZv0w+RPdq1wJb01gVRv9l9rZFdP2PriTqlPTgzxm1SGjlTUmZtO1HvtAc33ZcgpW0PSK+/3T6qRxqdVWsv64/Yp1STMl7WVuu1o0cZHTNCEwHPLuGlaluro9qUAVnuIPyXjQlB1LamD7qE0bHaV6QUgD3ETZGZW9nXeyZosliExrQAoSeY0cmywpuB42JnbE5WeFDCaq3R1qVZmmPsYYzhSsMoL9j0zLctG4ixCUdcWzWyP2HTM4aZVHdjwIogTiLpCbcoY6uCXhf5FmZF9uAK2pgoa4vGqxyUvWRGvJiOox5zt2ZsoYFCHSvFlT6nqGVak1QruznYqPPLWHxjeUMBwdiS/GYXOZVaHN/kg4icxla4KAfluo1EPdjGGbJidxt0+Qi+/6RZ2w4i3nxLp6qbBArlZmJpiFVG/lWUA2myRsm7Glhv5r1HbL8Cq2OlFJ7IRurAmua7o4c6+WYqFmKP040Nm0YHGohxmlLBcKyUsRxbHra6SVrmMUCWl2NZjhRmzF4dhX+w7FpuY14T9uvSHJ20oS5jpbwmN4fANqzXNINSE7oo8yvF0teIZyTE0+2HIbkZK6W1eUAnnvosE9heWSmPIgoO1zGW9lMgFWWmpDrWicYIPkT68egZWl4OMyxwFCkTfdPLNFKsAzgaZfGqkZDNXW4TvelsBtocGFOtfM05aCIlnlH3C5n3NJv7ZATYnLKLRFDz56r70oHmwDLrU8D0e66S5TCPlqWwgSmu5HnltaEDjCGVJGYQbCTUciOi4MBmtpNzYQqeuTkRUU00/pttxuM0pyIKeYyMJ8Wj+Qv5EFENOA55lXUCbXAFeMpF9wVKP/M981u+1wByYHkoURB7Dk90NIenOnKgDeDgQUY9u9wDNqfd+vI5MmDuzAqaulzfU1EGZ8/3AFpl9BsP597FFXR4fuqkXK4vrSu6iXp5mShx2W/hE4RgCMRMLUgdnxRVXICz1SJEy6scOlr1Lr5Hh30cPl78Ogmsav2augfHD1xcVfJYRxVsFVYBTKiwcdCVOk/FPf3scUSejr2LL4J4muPgLqgKB2RpPlq4JOV0HVVwDxW/DEhjBqY5AE+fuomkyFOx+BjwDIinw/6aeIKigJ0FzloGPBV/ZcdTsXgTjafijzXxBEXBkq8uIU+XmiPZj8jTfjSeir+JGtQf0GXVpTztK/4pGU9T3YszN7jLclI80m90q569PdLOHjx+esGmcqkdvTx4/LPgCRRFgHqM+8eH60v9Mhm1WqDQD/9mPk+32smHg2plBZocoMSX9oArs9Cq3aylnOzPzp6Lit6UF/Wvz462xJNVK/06v/j8Nz96dHjpATJXpSRCvX9yo18mDXR+r0Nx4oLfzMfJrPZ/xK/6q6kCmBY3wnrA+huDZzkjD+rBsqi79gZFGBcKo39+pwqGFl0DoCn2dTqFRX9Q8uKnf/KYOLcMNhi0C++y6JX8A87yNnGgHgzj6ad6tCJdkGbWAicfi7O/H6lCFSdF2G2dnwsUHgGAn7aGf8uk83QEbDw5T4WKKPyarAD/mbAh4PDFz4lAIEjs43NLAbQ4Cx8q13lSw42HFHgqSL9FOlpfVj/UW9S9pGlRNHOjvA99TB0dOH0ufD4S4AmIqDR4klKCingnvgu8KJT/kpdJw0M097lN/4BnQgASdGwS/mUc5KmoudE0eJK3oB7nTpLDA73uJOtCiyLDExSGPiXARG9PUVb2QDxp/eFUeBIyguLJN7u/ZaUA/QoR8ZCwiBvtHDhoFyFJzSvxwFu91uxT4emDn2jh2/eVt9O/Jq+TgQAYXp2+PhygCxxp0I7X4VY8ptofTtfuzgsIXGS2vH+44ekpHplAAYbHze5h1Wj3qrcnM8oYMK/DcUEIHaXLmgZPZX78EEtm0Umb//fL/+dav1AEzE/9x1xIrBrtCvqCxtGG+SVPMi7JaqbBkzgONIeHivYTwajuyLhtwgbJj66Wd5ph8D5S196LlBaXPEmHKYVzGjyJ/iohmnlT8YnhFgaU+ycvQTM8/l4fVsz3emg4/0bMnH+Eb0X7xFLhqS9ceYufTYEnEbwpN+L3Va79U8Lw9L4cP1z8qx7lZgcT1gQG7y/YB3W6p27NtCJ+YanwJJ9UvKLkPN2JtAHRnHi2grefCn3tyRFxwzLvD4abXbdmmbXJE9GHc9rTUrTVF1SepInwdxSLJ/mC+3symUb1gnmTaPED/Nkf9etEKYrhcbO7DH3ERYp3Zmbu+zNqVnbECU8aTzLD6XvMWDwdXPyc4/5YSVceUNknv/hrYZEitOmGR2kWzjFMcWCIgTpvT4w3wgKjQONJyBkegmPxROGRcrbc7GRgFzFXT6dLzynvGN3svpTkwIyqUugPKOg8SU23qGhaPNEvnTcJKQPE/R8DsnWiIM4xyC4QaIIcSrz5yDpP4vZ+yEmFp8t9+p2XuVkqnIhEbkC2Thget9BwswNfdZnxZtIAnuSbmxtDKjz9JforHmC08yAMDzy/uCUv6xr8Hww4shJvtgXkSaRSi61CanZHSxyeGNfUN29jwKGJdubzxxUEOTihoQNzTWE/oAF5ko/7t56ef9KzfwvwLNvl+YlEX7Rn3VaFP/BHNHjAoUYFdYDkQNxVZBFPcoDzJiZP1R+/5riRsuCICHfC51xfShyKskEbFDM25oYm/H3wHA8faHw85gRxzJOa70moM4UcotytPk6JcKhfLYqatyAu9MKj3bNudrHnzGGepIjaT9xvEWNz1+jFS0cYgJZ2+blWFV5Fyp51gFW9IowY0CB4km1870GtHMcKPEmBj+ZhLJWlHoDhCWXn3XRf+XspOhpLJRZPZBZonmQXPylP0rhQNyxwapmAHspEK58ZXsWvwSMsFOElRoqXBMWTHDPjiM2TTP4BEykXQ6EnDUS2biY1eaIl1Ozg+Hj8mc8kTydwPmD8vIowF/Du+XhUsQoh7g0yDKJpnvPE3WWo2Q2AF4//DSXJk8yMJeZJDlO2tDvcUiXr9z4MyNb95iEgdDzKTsuLB/EEZ7EmyGfuk3eo8EE9LBSlRepmJQLk4w/yPAFH/5yEjeKviBrAE5g3l4AnGdf2qKNE/0wYGBhf4dm6I26ZoYlxMN0iZhd4jgCeZIcqKU9y3Fv1N7yVUXNYhIGBiRtQSYSaHVzLK3Qy2BIE3VSknwmexEB4pPEW4bGVtiN0FTW9VSrQoGzdAqGTnsDXmkm+XxGdFPRytFmkB/QZzdEKMRE0fqcoR95aD6mIJXl60E8AuRJmdnAmfdzPcSt3v/4Io/i4/3nxU8twqP0vwdP53c2FFA3H9xc/50/auvstL//rFeU7ox/KLYpHFzOUK7Mi+JHL29ml2scYdzd/lBhyey9KKihJgzn2w54PZArYKB5NxGRmrbeqKkHBE1bRHrd1PNv3BpXho49ErGo/eNa6EtXK2nTzsElPcOGU2EuhhvBUUCbiHgT/plWgvlPxn47iCRWhPjDRm1FoVINL6OyLf7A5xRUFYTwpIuqb8KSqFXpWrETzbPXJYDF5ktX6JjzJqVThk56gd4o47huHJ9nOReBBzmXhnz7Q4RV4UokgknfqaekKPkKiXQN82Z1AY95U93VUYUeg7l9RvQ/+zTwc3YKj+5+LRlL/RCfKsIjPlnLH37D8Y+10hZ+uhiXG0WdjeV2zMls04FIm//9GmgRYhydXawitEQ7QTnlch3Ed+IILe+apOb39d6bhv8wWmHbWvL5MuugYFtOQ2Q6faBHGfAW7F2gNGZnDACYKctWciGVus9lUoTGGC+blqzmhD0sy2q0ZfdOavw180S58GeyECjVBktGDTQEtPMbGqVsedOK5Ws+TA+05m3qHAm7Bk9PtLb7QGvvpvm64ImZet3tEz5Hy0p5vUGLmdM8GvFVKGvtdCTyBtFP+NIEA2twxRXGAtz/KoxNfoIH2VE3NRdnTzLY/2gDQdiap9V+QPEtx+6MN4BQ+TkoqCr2AbJc1zhxNtMBnKiuh4i3UIqzf8K2B1GYau+fZaKP7fFudB7R7YQq+HCqn3KxavQywE5bcl+OdMAMXeswRYKfee6xEvhyu/TwjPvdW5wFufjWzvCRJO1xcjhWmBiTLk6QO8IbG5jDHClMF3jE2vuMdmLCsBNMuvhuQ3ImdUhsgo2MZ5Ek3BrRj7Mxa4kyEx5tjl8xcb2YMgXZen7Ww1dtBG0qM9DZJ/i6YohbFrlaVUaizmHJG6zugMUFtgbkrtajmKzbeHOfmgoCywLPGsApRzpigaQ3bZqwdDgpVM9OL/JzdK0TzLGjmc3PeEBBBj0WU0o0pJjmnw3URACdneIg0cWLg4kCX+9TcEqD95Gcw3sLkdOPdIGxu6xSBCiKylyy21HzspxrRDLebJqpL7PU8poFKyu4SYW5udFs+q3dItKiSVeqROsjuTkiT87LsW6YvEd4ookqm8Y4mBzz3rACWSrWtdeESKLnttymzNBw4Tc+p242mM/hyLfpCT03kbzrY6rCHAc/PZs1nNJm+vU0nY2agoWR53XLHvz0gfRTnwJoBbhIJGt4WdlZooAGTFWC8bl3XNxh4UC8imNnb9kCnoVtbZlqBsBIsB5JPOO7qTYoZw60ZMoiMDi2klsA827XGNIfdNqksQCBLZm/3GtMCTlCvBMOqDfP0vVjKsLsuGrYkwEzrfWc0E41mrxTmz5nh7nJb4uj0roxgP8XMmvu0Q8JyGezu9IrqzjHLNEbtHTc4DXbnZepahuzXMWYapbPpi7OrIS4YTad7Oh2NXQ/j16/2wEnB3P4H+KJGTeq2pGcAAAAASUVORK5CYII="
+                    width="50" height="30" alt=""></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="Me.html">Me</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link  text-light " href="Blog.html">Blog</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div id="content" class="content p-0">
+            <div class="profile-header mb-5">
+                <div class="profile-header-cover"></div>
+
+                <div class="profile-header-content">
+                    <div class="profile-header-img">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" />
+                    </div>
+
+                    <div class="profile-header-info">
+                        <h4 class="m-t-sm">John Doe</h4>
+                        <p class="m-b-sm">UXUI + Frontend Developer</p>
+                        <a href="#" class="btn btn-xs btn-info mb-4">Edit Profile</a>
+                    </div>
+                </div>
+
+                <ul class="profile-header-tab nav nav-tabs">
+                    <li class="nav-item"><a href="#profile-post" class="nav-link" data-toggle="tab">POSTS</a></li>
+                    <li class="nav-item"><a href="#profile-about" class="nav-link" data-toggle="tab">ABOUT</a></li>
+                    <li class="nav-item"><a href="#profile-photos" class="nav-link" data-toggle="tab">PHOTOS</a></li>
+                    <li class="nav-item"><a href="#profile-videos" class="nav-link active show"
+                            data-toggle="tab">VIDEOS</a></li>
+                    <li class="nav-item"><a href="#profile-friends" class="nav-link" data-toggle="tab">FRIENDS</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="row row-space-20">
+            <div class="col-sm-8 ">
+                <div class="tab-content p-0">
+                    <div class="tab-pane active show" id="profile-videos">
+                        <div class="m-b-10"><b>Videos (15)</b></div>
+
+                        <div class="row row-space-2">
+                            <div class="col-sm-8">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/38C1htPhqEY"></iframe>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2 ">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/2sAzb3kraoQ?list=PLXp68I97TLoUW8miwD1VGWAsvA3ADbu8K"></iframe>
+                                </div>
+                                <div class="embed-responsive embed-responsive-16by9 m-b-1 mt-1">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/A66TYFdz8YA"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space-2 mt-1">
+                            <div class="col-sm-4">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/Hw3NH_-_ja8" ></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/VNs_cCtdbPc?list=PLXp68I97TLoUW8miwD1VGWAsvA3ADbu8K"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2 ">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/38C1htPhqEY"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space-2 mt-1">
+                            <div class="col-sm-4">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/SEpTl9hlyq8"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/2lfETGiIDf8?list=PLXp68I97TLoUW8miwD1VGWAsvA3ADbu8K"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/2sAzb3kraoQ?list=PLXp68I97TLoUW8miwD1VGWAsvA3ADbu8K"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space-2 mt-1">
+                            <div class="col-sm-4">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/Hw3NH_-_ja8"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/VNs_cCtdbPc?list=PLXp68I97TLoUW8miwD1VGWAsvA3ADbu8K"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/uuCFRaFWjwY"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space-2 mt-1">
+                            <div class="col-sm-4">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/38C1htPhqEY"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/A66TYFdz8YA"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="embed-responsive embed-responsive-16by9 m-b-2">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/SEpTl9hlyq8"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 hidden-xs hidden-sm">
+                <ul class="profile-info-list">
+                    <li class="title">PERSONAL INFORMATION</li>
+                    <li>
+                        <div class="field">Occupation:</div>
+                        <div class="text-secondary">UXUI / Frontend Developer</div>
+                    </li>
+                    <li>
+                        <div class="field">Skills:</div>
+                        <div class="text-secondary">C++, PHP, HTML5, CSS, jQuery, MYSQL, Ionic, Laravel, Phonegap,
+                            Bootstrap, Angular JS, Angular JS, Asp.net</div>
+                    </li>
+                    <li>
+                        <div class="field">Birth of Date:</div>
+                        <div class="text-secondary">1989/11/04</div>
+                    </li>
+                    <li>
+                        <div class="field">Country:</div>
+                        <div class="text-secondary">San Francisco</div>
+                    </li>
+                    <li>
+                        <div class="field">Address:</div>
+                        <div class="text-secondary">
+                            <address class="m-b-0">
+                                Twitter, Inc.<br />
+                                1355 Market Street, Suite 900<br />
+                                San Francisco, CA 94103
+                            </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field">Phone No.:</div>
+                        <div class="text-secondary">
+                            (123) 456-7890
+                        </div>
+                    </li>
+                    <li class="title">FRIEND LIST (9)</li>
+                    <li class="img-list">
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                alt="" /></a>
+                        <a href="#" class="m-1"><img src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar5.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar8.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                alt="" /></a>
+                        <a href="#" class="mb-1"><img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                alt="" /></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left  ">
+                <div class="col-xs-12 col-sm-4 col-md-4 mt-5">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links ">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 mt-5">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 mt-5">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.google.co.in/"><i
+                                    class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.gmail.com/" target="_blank"><i
+                                    class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="https://saeculumsolutions.com/">bootdey.com</a></u> </p>
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2"
+                            href="https://saeculumsolutions.com/" target="_blank">Sunlimetech</a></p>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

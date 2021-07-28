@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form Details</title>
+</head>
+<body>
+
+    <script>
+        function check(form)
+        {
+            var Uname = form.username.value;
+            var Upass = form.password.value;
+
+            var dbemail = "Jay123@gmail.com";
+            var dbpass = "123987";
+
+            if(Uname==dbemail && Upass==dbpass)
+            {
+                document.getElementById("msg").innerHTML = " <b  style='color:green'> You Are Logedin SucessFully </b>";
+            }
+            else
+            {
+                document.getElementById("msg1").innerHTML = "<b style='color:red;'> Please Enter Valid Username And Password</b>";
+            }
+        }
+    </script>
+    <fieldset>
+        <legend>Task-2.Validate Form Details</legend>
+        <form action="">
+            Enter Your Username :-  <input type="email" name="username"><br><br>
+            Enter Your Password :- <input type="password" name="password"><br><br>
+                                    <input type="submit" value="Login" onclick="check(this.form); return false;">
+        </form>
+    </fieldset>
+
+    <p id="msg"></p>
+    <p id="msg1"></p>
+
+</body>
+</html>

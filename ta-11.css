@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    display: block;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .item{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+  
+  }
+  
+  /*// Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) { 
+      .item1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50% 
+      }
+      .item3{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
+         flex: 0 0 66.666667%;
+         max-width: 66.666667%    
+      }
+      .item2 {
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+   }
+  
+  /*// Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) { 
+      .item1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
+      .item2 {
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+   }
+  
+  /*// Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) { 
+  
+  }
+  
+  /*// Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) { 
+  
+  
+   }
+
+@include media-breakpoint-up(xs) { 
+    
+    .item1{
+        position:relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+     
+
+ }
+@include media-breakpoint-up(sm) {
+    .item1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+    .item{
+         
+    }
+    .item2 {
+        
+    }
+ }
+@include media-breakpoint-up(md) { 
+    .item1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .item2 {
+        
+    }
+
+}
+@include media-breakpoint-up(lg) { 
+
+ }
+@include media-breakpoint-up(xl) { 
+
+}
+
+.col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
